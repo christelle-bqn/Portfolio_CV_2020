@@ -1,0 +1,840 @@
+/*
+---------------------------------------------------------------------------------
+/* 1. CSS Reset
+-------------------------------------------------------------------------------*/
+* {
+	padding:0;
+	margin:0;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+	color: #ffffff;
+	font: 400 12px/1.8 'Poppins', sans-serif;
+	position: relative;
+	background-color: #151515;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+
+/*----------------------------------------------------
+ 2.	Document Setup
+------------------------------------------------------*/
+.wrapper{
+	width: 100%;
+}
+
+.spHeight{
+	padding-top:63px;
+}
+
+.noMar{
+	margin:0 !important;
+}
+
+.noPadd{
+	padding:0px !important;
+}
+
+.container .row{
+	margin:0px;
+}
+
+p{
+	font-family: 'Nunito';
+	font-size:16px;
+	line-height:21px;
+	font-weight:400;
+	padding-bottom:22px;
+	margin:0px;
+}
+
+a {
+    text-decoration: none;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 700 40px/1.2 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 5px 0 5px;
+	color: #151515;
+}
+
+h1 {
+	font-size:55px;
+	margin:0px;
+	padding-bottom:8px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+}
+
+h4 {
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+h4.subHeading{
+	font-weight: 600;
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+
+.heading{
+	text-align: center;
+	padding-bottom: 45px;
+}
+
+.heading__title {
+    position: relative;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #5b5963;
+}
+
+.heading__title span {
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -20px;
+    z-index: 0;
+    opacity: 0.05;
+    font-weight: 700;
+}
+
+.about__wrapper .container, .skills__wrapper .container, .experience__wrapper .container,
+.education__wrapper .container, .portfolio__wrapper .container, .plus__wrapper .container, .contact__wrapper .container {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.container .row {
+    margin: 0px;
+}
+
+.heading__line {
+    margin: 20px auto;
+    width: 25px;
+    height: 1px;
+    background-color: #B68E52;
+}
+
+/*----------------------------------------------------
+ 3.	Header Part
+------------------------------------------------------*/
+header {
+	position: relative;
+}
+
+.banner {
+	overflow: hidden;
+	margin: 0 auto !important;
+	background: #151515;
+}
+
+.banner__text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30%;
+	text-align: center;
+	padding: 30px 0 30px ;
+	max-width: 960px;
+	border: 6px solid #fff;
+	background: rgba(0, 0, 0, 0.5);
+	zoom: 1;
+}
+
+.banner__text__title {
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.banner__text__subTitle {
+	font-size: 40px;
+	text-transform: none;
+	color: #ffffff;
+	font-family: "Nunito";
+}
+
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+.banner__background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+/*----------------------------------------------------
+ 4.	Navbar Style
+------------------------------------------------------*/
+.navbar {
+	overflow: hidden;
+	background-color: #1b1b1b;
+	z-index: 1;
+	padding: 0px !important;
+	max-width: 100%;
+	border-bottom: 1px solid #000000;
+}
+
+.navbar a {
+	color:#ffffff;
+	text-transform:uppercase;
+	text-align: center;
+	text-decoration: none;
+	line-height:18px;
+	font-size: 15px;
+	padding: 20px 24px!important;
+}
+
+.navbar .container {
+	padding: 0px;
+	width: auto;
+	justify-content: center;
+}
+
+.navbar-header {
+	display: none;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+    text-align: center;
+    float: none;
+}
+
+.navbar-nav > .active > a {
+	background: #B68E52;
+	color:#151515;
+}
+
+a.nav-item.nav-link.goSmoothly:hover {
+	background: #B68E52;
+	color:#151515;
+}
+
+
+.navbar .navbar-toggler-icon {
+	color: #B68E52;
+}
+
+.navbar .navbar-toggler {
+	border: 1px solid #B68E52;
+	line-height: unset;
+}
+
+.navbar-collapse{
+	padding: 0;
+}
+
+.navbar-collapse.in{
+	max-height: 100%;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+
+/*----------------------------------------------------
+ 5.	About me Style
+------------------------------------------------------*/
+.about__wrapper {
+	background: #1b1b1b;
+	color: #ffffff;
+	position: relative;
+}
+
+.about__wrapper .container{
+	padding-top: 85px ;
+	padding-bottom: 93px ;
+}
+
+.about__btnDownload {
+	font-size: 14px;
+	font-weight: 700;
+	background: #B68E52;
+	padding: 16px 22px;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border: 2px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+.about__btnDownload:hover{
+	background: rgb(223, 174, 101);
+	color: #1b1b1b;
+	text-decoration: none;
+}
+
+.about__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.about__wrapper .heading__title span {
+	opacity: 0.1;
+}
+
+.social {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.social__list {
+    list-style: none;
+}
+
+.social__list__item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social__list__item-link {
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #36a0e7;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #36a0e7;
+}
+
+
+/*----------------------------------------------------
+ 6. Skills Style
+------------------------------------------------------*/
+.skills__wrapper {
+	background: #ffffff;
+	color: #1b1b1b;
+}
+
+.skills__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.skills__wrapper .heading__title span {
+	opacity: 0.09;
+}
+
+.skills__line {
+    height: 2px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background-color: rgb(204, 204, 204);
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+/*----------------------------------------------------
+ 7.	Education Style
+------------------------------------------------------*/
+.education__wrapper {
+	background: #1b1b1b;
+}
+
+.education__wrapper .container {
+	padding-top: 85px ;
+	padding-bottom: 90px ;
+}
+
+.rightArea {
+	border-left-color:#e5e4e4;
+}
+
+.education__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.education__wrapper .heading__title span {
+	opacity: 0.1;
+}
+
+.arrow {
+	float: left;
+	width: 15px;
+	height: 50px;
+	background: url(../assets/images/arrow-left-light.png) no-repeat 0 23px;
+}
+
+.workYear {
+	font-size: 17px;
+	color: rgb(255, 255, 255);
+	background: #B68E52;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	padding: 40px 0 40px 0;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	font-weight: 300;
+}
+
+.workDetails .rightArea {
+    border-left: solid 1px #eaeaea;
+    padding-bottom: 47px;
+}
+
+/*----------------------------------------------------
+ 8.	Work Experience Style
+------------------------------------------------------*/
+.experience__wrapper {
+	background: #1b1b1b;
+	border-top: 1px solid #B68E52;
+}
+
+.experience__wrapper .container{
+	padding-top: 85px ;
+	padding-bottom: 90px ;
+}
+
+.exCon {
+	width:auto;
+	background:#fafafa;
+	border-bottom:solid 4px #e8e7e7;
+	padding:22px 47px 6px 47px;
+	margin-left:15px;
+	text-align:left;
+	color: #1b1b1b;
+}
+
+.exCon__title {
+	color:#474d5d;
+	padding-bottom: 3px;
+}
+
+.exCon__subTitle {
+	color:#3a3f4e;
+	font-family: 'Nunito';
+}
+
+.exCon__list__item {
+	font-size: 16px;
+	font-family: 'Nunito';
+}
+
+.experience__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.experience__wrapper .heading__title span {
+	opacity: 0.1;
+}
+
+
+/*----------------------------------------------------
+9. Portfolio Style
+------------------------------------------------------*/
+.portfolio__wrapper {
+	background: #ffffff;
+	border-top: 1px solid #B68E52;
+}
+
+.portfolio__wrapper .container {
+	padding-top: 85px ;
+	padding-bottom: 90px ;
+}
+
+.portfolio__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.portfolio__wrapper .heading__title span {
+	opacity: 0.09;
+}
+ 
+.portfolio__wrapper h3 {
+    margin-top: 30px;
+    font-size: 12pt;
+    font-weight: 400;
+    letter-spacing: 4pt;
+}
+
+.thumb {
+    position: relative;
+    padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  background: #B68E52;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.overlay__item {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+		  transform:translate(-50%,-50%);
+}
+
+.overlay__item__title {
+	color: #ffffff;
+}
+
+.thumb:hover .overlay {
+  opacity: 0.9;
+}
+
+.portfolio__wrapper .col-md-4 {
+    margin-top: 30px;
+}
+
+.thumb__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay__item__subTitle {
+	font-size: 12px;
+	color: #ffffff;
+    font-weight: 500;
+	letter-spacing: 4pt;
+	margin-top: 15px;
+}
+
+.mfp-title {
+	font-size: 15px;
+}
+
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
+
+/*----------------------------------------------------
+ 10. Plus Style
+------------------------------------------------------*/
+.plus {
+	background:#ffffff;
+}
+
+.plus .container{
+	padding-top: 85px ;
+	padding-bottom: 90px ;
+	text-align: center;
+}
+
+.plus .heading__title {
+	color: #B68E52;
+}
+
+.plus .heading__title span {
+	opacity: 0.09;
+}
+
+.plus__infos__title {
+	font-size: 17px;
+	padding-bottom: 20px;
+}
+
+.plus__infos__subTitle-car {
+	padding-top: 10px;
+	font-family: 'Nunito';
+}
+
+.plus__infos__subTitle {
+	padding-bottom: 45px;
+	padding-top: 10px;
+	font-family: 'Nunito';
+}
+
+.plus__infos-interests {
+	justify-content: space-evenly;
+}
+
+
+/*----------------------------------------------------
+ 11. Contact Style
+------------------------------------------------------*/
+.contact__wrapper {
+	background:#1b1b1b;
+	color: #ffffff;
+}
+
+.contact__wrapper .container{
+	padding-top: 85px;
+	padding-bottom: 90px;
+}
+
+.contact__wrapper .heading__title {
+	color: #B68E52;
+}
+
+.contact__wrapper .heading__title span {
+	opacity: 0.1;
+}
+
+.contact {
+	align-items: baseline;
+}
+
+.contact__form__title {
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+	color: #ffffff;
+}
+
+.contact__infos__item {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 19px;
+	padding-bottom: 14px;
+	margin-bottom: 20px;
+}
+
+.contact__infos__item a{
+	color: #ffffff;
+}
+
+.contact__infos__item a:hover {
+	color: #36a0e7;
+	text-decoration: none;
+}
+
+.infos__item__icon {
+	padding-right: 15px;
+}
+
+.contact__form .form-control {
+	background: #fafafa;;
+	color: #1b1b1b;
+	padding: 15px 30px;
+	border: none;
+	margin-right: 3%;
+	margin-bottom: 30px;
+	outline: none;
+	font-size: 0.9rem;
+}
+
+.contact__form input .noMarr {
+	margin-right: 0px;
+}
+
+.contact__form textarea {
+	background: #fafafa;
+	color: #1b1b1b;
+	padding: 15px 30px;
+	border: none;
+	margin-bottom: 40px;
+	outline: none;
+	height: 100px;
+	font-size: 0.9rem;
+}
+
+.form__submitBtn {
+	background: #B68E52;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	padding: 15px 30px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	margin-left: 12px;
+	border: 2px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+.form__submitBtn:hover {
+	background: rgb(221, 172, 99);
+	color: #1b1b1b;
+}
+
+.text-success, .text-danger {
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+ Responsive style
+-------------------------------------------------------------------------------*/
+@media screen and (max-width: 1320px) {
+	#navbar a {
+		padding:22px 15px;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.navbar-header {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.plus__infos {
+		margin-top: 45px;
+	}
+
+	.contact__infos {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.heading__title span {
+		font-size: 50px;
+		top: -15px;
+	}	
+
+	.plus .heading {
+		padding-bottom: 38px;
+	}
+}
+
+
+@media screen and (max-width: 770px) {
+	.about__proPic {
+		text-align: center;
+		margin: 20px 0 10px 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.workYear {
+		margin: 0 auto;
+	}
+
+	.workDetails .rightArea {
+		border-left: none;
+	}
+
+	.arrow {
+		float: none;
+		width: 100%;
+		height: 40px;
+		background: url(../assets/images/arrow-top-light.png) no-repeat 50% 100%;
+	}
+
+	.exCon {
+		margin-left: 0px;
+	}
+
+	.heading__title span {
+		font-size: 34px;
+		top: -8px;
+	}	
+
+	.heading__title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.banner__text__title {
+		font-size: 30px;
+	}
+	
+	.banner__text__subTitle {
+		font-size: 25px;
+	}	
+
+	.banner__text {
+		border: 4px solid #fff;
+	}
+}
+
+@media screen and (max-width: 446px) {
+	.social {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.heading__title span {
+		font-size: 25px;
+		top: -5px;
+	}	
+
+	.heading__title {
+		font-size: 20px;
+	}	
+}
